@@ -2,3 +2,11 @@ body
 {
 	background-color: rgb(20, 171, 48);
 }
+
+#mainbox
+{
+position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+}
