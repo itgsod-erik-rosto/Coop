@@ -3,6 +3,7 @@
 BITMAP *buffer;
 BITMAP *login1;
 BITMAP *lista1;
+BITMAP *background;
 
 int currentstage=0;
 
@@ -18,7 +19,7 @@ int main(){
     
     lista1=load_bitmap("../Skiss/Lista1.bmp", NULL);
     login1=load_bitmap("../Skiss/loggain.bmp", NULL);
-    
+    background=load_bitmap("../Skiss/background.bmp", NULL);
     
     mouse_x=20;
  mouse_y=20;
@@ -43,7 +44,7 @@ int main(){
                          {
                                              
      blit (lista1, buffer, 0, 0, 0, 0, 1340, 700);
-     
+     blit (background, buffer, 0, 0, 0, 0, 1340, 700);
                                              }
      
       textprintf_ex(buffer, font, 900, 30, makecol(255, 0, 0), -1, "x: %i", mouse_x);
@@ -53,6 +54,7 @@ int main(){
    
    
         rest(10);
+         
    blit (buffer, screen, 0, 0, 0, 0, 1340, 700);
    clear_bitmap(buffer);
     }    
