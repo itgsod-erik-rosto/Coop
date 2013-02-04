@@ -26,6 +26,10 @@ int main(){
  mouse_b;
  set_mouse_speed(1, 3);
  
+ 
+ //Information om leverantörer.
+ //Filtrera sökningar.
+ 
     while( !key[KEY_ESC])
     
     {
