@@ -1,8 +1,10 @@
 #include <allegro.h>
 
 BITMAP *buffer;
+BITMAP *login1;
 BITMAP *lista1;
 
+int currentstage=0;
 
 int main(){
 
@@ -15,6 +17,7 @@ int main(){
     buffer=create_bitmap(1340, 700);
     
     lista1=load_bitmap("../Skiss/Lista1.bmp", NULL);
+    login1=load_bitmap("../Skiss/loggain.bmp", NULL);
     
     
     mouse_x=20;
@@ -25,8 +28,23 @@ int main(){
     while( !key[KEY_ESC])
     
     {
+     if (key[KEY_1])
+     currentstage=1;
      
+     if (key[KEY_0])
+     currentstage=0;
+           
+     if (currentstage==0)
+     {
+                         
+     blit (login1, buffer, 0, 0, 0, 0, 1340, 700);
+                         }
+                         if (currentstage==1)
+                         {
+                                             
      blit (lista1, buffer, 0, 0, 0, 0, 1340, 700);
+     
+                                             }
      
       textprintf_ex(buffer, font, 900, 30, makecol(255, 0, 0), -1, "x: %i", mouse_x);
       textprintf_ex(buffer, font, 900, 40, makecol(255, 0, 0), -1, "y: %i", mouse_y);
