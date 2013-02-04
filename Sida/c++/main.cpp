@@ -50,7 +50,7 @@ int main(){
       textprintf_ex(buffer, font, 900, 30, makecol(255, 0, 0), -1, "x: %i", mouse_x);
       textprintf_ex(buffer, font, 900, 40, makecol(255, 0, 0), -1, "y: %i", mouse_y);
       
-    circlefill(buffer, mouse_x, mouse_y, 5, makecol(255, 255, 255));
+    circlefill(buffer, mouse_x, mouse_y, 5, makecol(0, 0, 255));
    
    
         rest(10);
