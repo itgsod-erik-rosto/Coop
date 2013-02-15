@@ -3,6 +3,14 @@ body
 	background-color: rgb(20, 171, 48);
 }
 
+#topbox
+{
+background: url("background.bmp");
+width: 1000px;
+height: 1080px;
+
+}
+
 #mainbox
 {
 	position: relative;
