@@ -3,6 +3,7 @@
 
 <head>
 
+
 	<title>Coop</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<LINK REL=StyleSheet HREF="resources/coop.css" TYPE="text/css"></head>
@@ -14,8 +15,9 @@
 	<div class="mainbox">
 
 <table class="list" border="1">
+
 	
-			<td class="list1" id="opt1">S</td>
+			<td class="list1" id="opt1"><button onclick="myFunction('button1', 'opt1')" class="list1" id="button1" type="button"></button></td>
 			<td class="list1" id="opt2">Leverantör</td>
 			<td class="list1" id="opt3">Vara</td>
 			<td class="list1" id="opt4">Kategori</td>
@@ -185,5 +187,20 @@
 
 
 </body>
+
+<script type="text/javascript">
+document.getElementById('button1').style.borderWidth= '0'; 
+document.getElementById('button1').style.borderColor= 'rgb(198,  198, 198)';
+document.getElementById('button1').style.backgroundColor= 'rgb(198,  198, 198)'; / // show 
+</script>
+
+
+<script>
+function myFunction(btn, opt)
+{
+document.getElementById(btn).style.visibility='hidden';
+document.getElementById(opt).style.backgroundColor= 'green';
+}
+</script>
 
 </html>
