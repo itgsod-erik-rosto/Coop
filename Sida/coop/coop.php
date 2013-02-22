@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 
+<script type="text/javascript">
+
+</script>
 
 <head>
-<form>
-<input type="text" name="search"><br>
-</form>
+
 
 	<title>Coop</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -41,21 +42,21 @@
 
 	<script>
 var i3=0;
-var A="ACTIVE";
-var I="INACTIVE";
+
 		
 	var rows = [];
-	rows.push(new Row(A, "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
-	rows.push(new Row(A, "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
-	rows.push(new Row(A, "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
+	rows.push(new Row("Status", "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
+	rows.push(new Row("Fnatus", "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
+	rows.push(new Row("Blatus", "Grej1", "Grej2", "Grej3", "Grej4", "Grej5", "Grej6"));
+
 
 	while (i3<1)
 	{
 
 i3++;
-printObject(rows[0], 1);
-printObject(rows[1], 2);
-printObject(rows[2], 3);
+printObject(rows[0]);
+printObject(rows[1]);
+printObject(rows[2]);
 
 }
 
