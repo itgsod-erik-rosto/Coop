@@ -3,9 +3,7 @@
 
 
 <head>
-<form>
-<input type="text" name="search"><br>
-</form>
+
 
 	<title>Coop</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -14,17 +12,34 @@
 
 	<script type="text/javascript" src="resources/coop.js"></script>
 </head>
-<body>
-<div id="myDiv"></div>
 
 <body onload="Function1()">
 
 
-	<div id="topbox"></div>
+	<div class="topbox">
+		
+<a href="coop.html">
+<img src="resources/coop.bmp" alt="Coop" class="homebutton" width="226" height="91">
+</a>
+
+<div class="menu">
+<a href="coop.html" class="menu_button" id="home" alt="Hem"><p>Hem</p></a>
+<a href="anstallda.html" class="menu_button" id="employees" alt="Anställda"><p>Anställda</p></a>
+<a href="statistik.html" class="menu_button" id="stats" alt="Statistik"><p>Statistik</p></a>
+<a href="" class="menu_button" id="unknown" alt="?"><p>?</p></a>
+</div>
+
+<div id="searchdiv">
+<form class="textbox" id="src">
+<input type="text" name="search" class="input_text">
+<input type="submit" value="" class="submitsrc"><br>
+</form>
+</div>
 
 
+	</div>
 
-	<div class="mainbox">
+
 
 
 <table class="list" border="1">
@@ -62,7 +77,6 @@ printObject(rows[2], 3);
 
 </script>
 		</table>
-	</div>
 
 
 </body>
