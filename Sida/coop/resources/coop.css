@@ -10,10 +10,12 @@ div.topbox
 {
 	position: absolute;
 background: url("background.bmp");
+
 width: 100%;
-height: 120px;
+height: 130px;
 
 background-repeat: no-repeat;
+z-index: 2;
 }
 a.menu_button
 {
@@ -28,7 +30,7 @@ font-size: 17px;
 	border-style: solid;
 	border-color: rgb(20, 20, 20);
 	z-index: 3;
-	width: 130px;
+	width: 142px;
 	height: 50px;
 }
 a#home.menu_button
@@ -51,21 +53,21 @@ div.menu
 {
 	border-style: outset;
 	position: absolute;
-	margin-left: 310px;
-	margin-top: 62px;
-	width: 520px;
+	left: 30%;
+	top: 47%;
 	height: 50px;
+	width: 533px;
 	background-color: black;
 z-index: 2;
 }
 div#searchdiv
 {
 	position: absolute;
-	margin-left: 950px;
-	margin-top: 70px;
+	left: 80%;
+	top: 55%;
 	border-style: inset;
 	border-width: 3px;
-	width: 250px;
+	width: 13%;
 }
 form#src.textbox
 {
@@ -73,13 +75,13 @@ form#src.textbox
 img.homebutton
 {
 	position: absolute;
-	margin-top: 15px;
-	margin-left: 20px;
+	top: 15%;
+	left: 20px;
 	z-index: 2;
 }
 input.input_text
 {
-	width: 170px;
+	width: 70%;
 	height: 37px;
 	font-size: 16px;
 font-family: "Myriad Hebrew";
@@ -125,14 +127,18 @@ table.list
 	text-align: center;
 font-family: "Myriad Hebrew";
 font-size: 20px;
-	position: relative;
 	background-color: rgb(198,  198, 198);
-	height: 10px;
-	width: 950px;
-	top: 200px;
-	left: 120px;
+	width: 100%;
 }
+div.mainlist
+{
 
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 50%;
+	height: 100%;
+}
 tr.listopt
 {
 color: black;
