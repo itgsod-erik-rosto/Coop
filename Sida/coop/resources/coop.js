@@ -1,7 +1,23 @@
 
 var li=0;
+var l_amount=0;
 
+var i3=0;
+var i4=0;
+var list_max=10;
+var list_amount=0;
+var list_created=0;
+		
+	var rows = [];
 
+function timedRefresh(timeoutPeriod) 
+{
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+function newlist()
+{
+	rows[1].lev="PENIS";
+}
 function myFunction(li)
 {
 
@@ -10,6 +26,7 @@ document.getElementsByClassName('list7')[li-1].style.backgroundColor= 'green';
 }
 function Function1()
 {
+
 	var i=-1;
 	while (i<1)
 	{
@@ -18,6 +35,8 @@ function Function1()
 
 }
 }
+
+
 
 function printObject(row1, i)
 {
@@ -54,9 +73,14 @@ document.write('<td class="list6" id="opt7">');
 document.write(row1.nextrev);
 document.write('</td>');
 document.write('</tr>');
+
+
 }
 
+function sort(cat)
+{
 
+}
 	function Row(status, lev, prod, cat, country, risk, nextrev)
 	{
 

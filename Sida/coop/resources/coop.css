@@ -135,9 +135,17 @@ div.mainlist
 
 	position: absolute;
 	left: 20%;
-	top: 20%;
+	margin-top: 13%;
 	width: 50%;
 	height: 100%;
+}
+div#newlistb
+{
+	position: absolute;
+	margin-top: 10%;
+	left: 20%;
+	width: 20px;
+	height: 10px;
 }
 tr.listopt
 {
