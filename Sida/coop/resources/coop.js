@@ -14,9 +14,10 @@ function timedRefresh(timeoutPeriod)
 {
 	setTimeout("location.reload(true);",timeoutPeriod);
 }
-function newlist()
+function newlist(i)
 {
-	rows[1].lev="PENIS";
+	rows[i].status="status";
+	rows[i].lev="leverantör";
 }
 function myFunction(li)
 {
@@ -27,12 +28,11 @@ document.getElementsByClassName('list7')[li-1].style.backgroundColor= 'green';
 function Function1()
 {
 
+
 	var i=-1;
 	while (i<1)
 	{
 	i++;
-
-
 }
 }
 

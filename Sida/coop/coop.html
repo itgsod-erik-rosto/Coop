@@ -2,10 +2,6 @@
 
 
 <html>
-
-
-
-
 <head>
 
 	<title>Coop</title>
@@ -16,7 +12,7 @@
 	<script type="text/javascript" src="resources/coop.js"></script>
 </head>
 
-<body onload= "Function1()" onload = "setuplist()" >
+<body onload= "Function1()" onload = "setuplist()"  >
 
 
 	<div class="topbox">
@@ -69,16 +65,15 @@ function listazero()
 
 	while (list_created<list_max)
 	{
-
 	rows.push(new Row(rows.status, rows.lev, rows.prod, rows.cat, rows.country, rows.risk, rows.nextrev));
+		newlist(0);
 	list_created++;
 
+	
 }
 
 	while (list_amount<list_created)
 	{
-
-
 printObject(rows[list_amount], list_amount+1);
 list_amount++;
 
